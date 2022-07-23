@@ -1,0 +1,52 @@
+CREATE SCHEMA if not exists estadisticas_basquet;
+USE estadisticas_basquet;
+
+CREATE TABLE if not exists jugadoras (
+	id_numero INT NOT NULL PRIMARY KEY, 
+	nombre VARCHAR(45),
+	pos VARCHAR(15),
+	edad INT,
+	alt DECIMAL(2,2)
+    );
+
+CREATE TABLE if not exists partidos (
+	id INT NOT NULL PRIMARY KEY,
+	dia DATE,
+    nombre_torneo VARCHAR(45),
+    rival VARCHAR(45) NOT NULL,
+    resultado VARCHAR(7) NOT NULL,
+    win BOOLEAN,
+    instancia VARCHAR(45)
+    );
+
+CREATE TABLE if not exists torneo (
+	nombre_torneo VARCHAR(45) NOT NULL PRIMARY KEY,
+    organizador VARCHAR(45),
+    equipos INT NOT NULL
+    );
+    
+CREATE TABLE if not exists estadisticas_individuales (
+	id_partido INT NOT NULL PRIMARY KEY,
+	id_numero INT NOT NULL,
+    pts INT,
+    reb INT,
+    asist INT,
+    perd INT,
+    rob INT,
+    min DECIMAL(2,2)
+    );
+    
+CREATE TABLE if not exists promedios (
+	id_numero INT NOT NULL PRIMARY KEY,
+	pts_promedio DECIMAL(2,2),
+    reb_promedio DECIMAL(2,2),
+    asist_promedio DECIMAL(2,2),
+    perd_promedio DECIMAL(2,2),
+    rob_promedio DECIMAL(2,2),
+    min_promedio DECIMAL(2,2)
+    );
+
+ALTER TABLE estadisticas_individuales ADD FOREIGN KEY (id_partido) REFERENCES partidos(id);
+ALTER TABLE partidos ADD FOREIGN KEY (nombre_torneo) REFERENCES torneo(nombre_torneo);
+ALTER TABLE estadisticas_individuales ADD FOREIGN KEY (id_numero) REFERENCES jugadoras(id_numero);
+ALTER TABLE promedios ADD FOREIGN KEY (id_numero) REFERENCES jugadoras(id_numero);    
