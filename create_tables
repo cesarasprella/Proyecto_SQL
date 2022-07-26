@@ -6,7 +6,7 @@ CREATE TABLE if not exists jugadoras (
 	nombre VARCHAR(45),
 	pos VARCHAR(15),
 	edad INT,
-	alt DECIMAL(2,2)
+	alt DECIMAL(3,2)
     );
 
 CREATE TABLE if not exists partidos (
@@ -33,20 +33,10 @@ CREATE TABLE if not exists estadisticas_individuales (
     asist INT,
     perd INT,
     rob INT,
-    min DECIMAL(2,2)
+    min DECIMAL(4,2)
     );
-    
-CREATE TABLE if not exists promedios (
-	id_numero INT NOT NULL PRIMARY KEY,
-	pts_promedio DECIMAL(2,2),
-    reb_promedio DECIMAL(2,2),
-    asist_promedio DECIMAL(2,2),
-    perd_promedio DECIMAL(2,2),
-    rob_promedio DECIMAL(2,2),
-    min_promedio DECIMAL(2,2)
-    );
+
 
 ALTER TABLE estadisticas_individuales ADD FOREIGN KEY (id_partido) REFERENCES partidos(id);
 ALTER TABLE partidos ADD FOREIGN KEY (nombre_torneo) REFERENCES torneo(nombre_torneo);
-ALTER TABLE estadisticas_individuales ADD FOREIGN KEY (id_numero) REFERENCES jugadoras(id_numero);
-ALTER TABLE promedios ADD FOREIGN KEY (id_numero) REFERENCES jugadoras(id_numero);    
+ALTER TABLE estadisticas_individuales ADD FOREIGN KEY (id_numero) REFERENCES jugadoras(id_numero); 
