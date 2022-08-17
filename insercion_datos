@@ -38,13 +38,13 @@ INSERT INTO equipos (id_equipo, nombre_equipo, direc, ciudad) VALUES
 INSERT INTO partidos (id, dia, nombre_torneo, id_equipo1, id_equipo2, resultado, win, instancia)
 VALUES
 	(1, '2022-03-25', 'Amistoso', 1, 11, '70-45', True, 'Amistoso'),
-	(2,	'2022-04-03', 'Apertura', 1, 2, '54-60', False, 'Fecha 1'),
+	(2, '2022-04-03', 'Apertura', 1, 2, '54-60', False, 'Fecha 1'),
 	(3, '2022-04-10', 'Apertura', 1, 3, '54-60', False, 'Fecha 2'),
 	(4, '2022-04-24', 'Apertura', 1, 4, '68-32', True, 'Fecha 3'),
 	(5, '2022-05-01', 'Apertura', 1, 5, '101-19', True, 'Fecha 4'),
-	(6,	'2022-05-08', 'Apertura', 1, 6, '58-51', True, 'Fecha 5'),
-	(7,	'2022-05-15', 'Apertura', 1, 7, '52-45', True, 'Fecha 6'),
-	(8,	'2022-05-22', 'Apertura', 1, 8, '43-49', False, 'Fecha 7'),
+	(6, '2022-05-08', 'Apertura', 1, 6, '58-51', True, 'Fecha 5'),
+	(7, '2022-05-15', 'Apertura', 1, 7, '52-45', True, 'Fecha 6'),
+	(8, '2022-05-22', 'Apertura', 1, 8, '43-49', False, 'Fecha 7'),
 	(9, '2022-05-29', 'Apertura', 1, 9, '51-36', True, 'Fecha 8'),
 	(10, '2022-06-05', 'Apertura', 1, 10, '83-21', True, 'Fecha 9'),
 	(11, '2022-06-26', 'Apertura', 1, 7, '58-42', True, 'Cuartos de final'),
