@@ -7,17 +7,17 @@ VALUES
 	(7, 1, 'Marina Zubillaga', 'pivot', 30, 1.77),
 	(8, 1, 'Milena De Luca', 'ala-pivot', 22, 1.65),
 	(9, 1, 'María De Sabantonio', 'alera', 37, 1.60),
-    (10, 1, 'Sofía Cruz', 'ala-pivot', 22, 1.80),
+    	(10, 1, 'Sofía Cruz', 'ala-pivot', 22, 1.80),
 	(12, 1, 'Carolina Romaniello', 'pivot', 25, 1.70),
 	(13, 1, 'Natalia Cirigliano', 'base', 31, 1.63),
 	(15, 1, 'Ana Clara Iannone', 'alera', 29, 1.60),
 	(26, 1, 'Yamila Vilte', 'base', 22, 1.60),
-    (30, 1, 'Mora Pereira', 'base', 17, 1.55),
+    	(30, 1, 'Mora Pereira', 'base', 17, 1.55),
 	(46, 1, 'Suyai Wegener', 'escolta', 17, 1.60);
 
 INSERT INTO torneo (nombre_torneo, organizador, equipos)
 VALUES
-	('Apertura', 'APdeB', 9),
+	('Apertura', 'APdeB', 10),
 	('Clausura', 'APdeB', 9),
 	('Amistoso', null, null);
     
@@ -50,4 +50,4 @@ VALUES
 	(11, '2022-06-26', 'Apertura', 1, 7, '58-42', True, 'Cuartos de final'),
 	(12, '2022-07-01', 'Amistoso', 1, 12, '40-70', False, 'Amistoso'),
 	(13, '2022-07-03', 'Apertura', 1, 8, '52-70', False, 'Semifinal'),
-	(14, '2022-08-02', 'Clausura', 1, 2, '0-0', True/False ,'Fecha 1');
+	(14, '2022-08-02', 'Clausura', 1, 2, '41-41', True ,'Fecha 1');
