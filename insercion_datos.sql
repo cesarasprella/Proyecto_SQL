@@ -1,3 +1,5 @@
+USE estadisticas_basquet;
+
 INSERT INTO jugadoras (id_numero, id_equipo, nombre, pos, edad, alt) 
 VALUES
 	(0, 1, 'Sofía Gómez', 'alera', 24, 1.65),
