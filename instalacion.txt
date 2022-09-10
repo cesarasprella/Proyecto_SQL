@@ -1,0 +1,10 @@
+Orden de inserción de datos:
+1. create_tables
+2. insercion_datos
+3. script_vistas
+4. funciones
+5. stored_procedures
+6. triggers
+7. sentencias_dcl
+8. sentencias_tcl
+9. backup
