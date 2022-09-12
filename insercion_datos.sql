@@ -52,4 +52,4 @@ VALUES
 	(11, '2022-06-26', 'Apertura', 1, 7, '58-42', True, 'Cuartos de final'),
 	(12, '2022-07-01', 'Amistoso', 1, 12, '40-70', False, 'Amistoso'),
 	(13, '2022-07-03', 'Apertura', 1, 8, '52-70', False, 'Semifinal'),
-	(14, '2022-08-02', 'Clausura', 1, 2, '41-41', True ,'Fecha 1');
+	(14, '2022-08-02', 'Clausura', 1, 2, '45-41', True ,'Fecha 1');
